@@ -1,0 +1,115 @@
+body {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  text-align: left;
+  padding: 0rem 2rem;
+  max-width: 80rem;
+  margin-top: 10rem;
+}
+
+p {
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+header {
+  border-bottom: 1px solid #eee;
+}
+
+h1 {
+  text-align: left;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  height: 4rem;
+}
+
+.logo img {
+  height: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  margin-top: 2rem;
+}
+
+.hero-image>img {
+  width: 45rem;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:visited {
+  color: #219dfd;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-align: left;
+  margin-top: 1rem;
+  padding: 1rem;
+  display: block;
+  width: fit-content;
+  
+  transition: all .25s ease-in-out;
+  border: 4px solid;
+  border-image-slice: 1;
+  animation: border 2s infinite alternate-reverse;  
+}
+@keyframes border {
+  from{
+    border-image-source: linear-gradient(to left, #1580fd, #1cf3c9)
+  }
+  to{
+    border-image-source: linear-gradient(to right, #1580fd, #1cf3c9)
+  }
+}
+
+
+@media (max-width: 450px) {
+  .logo img {
+    height: 48px;
+  }
+
+  .container {
+    margin-top: 1rem;
+    padding: 1rem;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container>section {
+    padding: 1rem;
+  }
+
+  .hero-image {
+    padding: 0;
+  }
+
+  .hero-image>img {
+    width: 100%;
+  }
+}
