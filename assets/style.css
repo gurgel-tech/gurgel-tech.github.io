@@ -1,3 +1,6 @@
+html{
+  font-size: 16px;
+}
 body {
   color: rgba(0, 0, 0, 0.87);
   font-family: 'DM Sans', sans-serif;
@@ -86,13 +89,13 @@ a:visited {
 
 
 @media (max-width: 450px) {
-  .logo img {
+  .logo img, header {
     height: 48px;
   }
 
   .container {
     margin-top: 0;
-    padding: 1rem;
+    padding: 0.5rem;
     flex-direction: column;
     max-width: 100%;
   }
@@ -103,6 +106,10 @@ a:visited {
 
   .container>section {
     padding: 1rem;
+    
+  }
+  .container>section>p{
+    font-size: 1.1rem;
   }
 
   .hero-image {
